@@ -34,7 +34,7 @@
   border: 1px solid black;
 }
 .delete{
-  color: grey;
+  color: rgb(163, 162, 162);
 }
 .eachItems:hover .delete {
   color: #c30000;
