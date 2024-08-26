@@ -6,6 +6,7 @@ function ToDo() {
   //  input ki value me inputData dal diya or onchahnge pe esla update wala funct me value dal di
   const [inputData, setInputData] = useState("");
   const [items, setItems] = useState([]);
+  const [buttonText, setButtonText] = useState("Check List");
 
   const addItems = () => {
     // jab kuch data Hoga tabhi add hoga
@@ -32,7 +33,7 @@ function ToDo() {
     <>
       <div className="main-div">
         <div className="child-div d-flex flex-column justify-content-center align-items-center col-10 col-md-3 col-lg-2 mx-auto">
-          <div className="d-flex flex-column justify-content-center align-items-center mt-5 ">
+          <div className="d-flex flex-column justify-content-center align-items-center mt-1 ">
             <img src={notes} alt="" className="title_img" />
             <p className="mt-2 fw-bold">Add Your List Here</p>
           </div>
@@ -72,8 +73,13 @@ function ToDo() {
           </div>
 
           <div className="mt-3">
-            <button className="btn btn-primary" onClick={Allclear}>
-              Remove all
+            <button
+              className="btn btn-primary clear-btn"
+              onClick={Allclear}
+              onMouseEnter={() => setButtonText("Remove All")}
+              onMouseLeave={() => setButtonText("Check List")}
+            >
+              {buttonText}
             </button>
           </div>
         </div>

@@ -31,8 +31,19 @@
   border-radius: 5px;
   padding: 5px 10px;
   font-size: 13px;
-
+  border: 1px solid black;
 }
+.delete{
+  color: grey;
+}
+.eachItems:hover .delete {
+  color: #c30000;
+}
+
+.delete:hover{
+  color: #c30000;
+}
+
 .addItems{
   display: flex;
   justify-content: center;
@@ -50,6 +61,8 @@ font-weight: bolder;
 .itemname{
   font-size: 1rem;
 }
-.delete{
-  color: #cc0202;
+
+.clear-btn:hover {
+  background-color: #c30000 !important;
+  border: 1px solid #c30000 !important;
 }
