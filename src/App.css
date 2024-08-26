@@ -31,8 +31,19 @@
   border-radius: 5px;
   padding: 5px 10px;
   font-size: 13px;
-
+  border: 1px solid black;
 }
+.delete{
+  color: rgb(163, 162, 162);
+}
+.eachItems:hover .delete {
+  color: #c30000;
+}
+
+.delete:hover{
+  color: #c30000;
+}
+
 .addItems{
   display: flex;
   justify-content: center;
@@ -43,13 +54,15 @@
   background-color: rgb(179, 179, 179);
 font-weight: bold;
 font-weight: bolder;
- padding: 6px;
+ padding: 7px;
  border-radius: 5px;
 }
 
 .itemname{
   font-size: 1rem;
 }
-.delete{
-  color: #cc0202;
+
+.clear-btn:hover {
+  background-color: #c30000 !important;
+  border: 1px solid #c30000 !important;
 }
